@@ -189,6 +189,18 @@ vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right win
 vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
 vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
 
+-- Recentre cursor on large scrolls
+vim.keymap.set('n', '<C-d>', '<C-d>zz>')
+vim.keymap.set('n', '<C-u>', '<C-u>zz>')
+
+-- Recentre cursor on normal scroll
+vim.api.nvim_set_keymap('n', 'j', 'jzz', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', 'k', 'kzz', { noremap = true, silent = true })
+
+-- Normal scrolling on shift scroll
+vim.api.nvim_set_keymap('n', 'J', 'j', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', 'K', 'k', { noremap = true, silent = true })
+
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 
