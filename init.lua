@@ -202,16 +202,6 @@ vim.api.nvim_set_keymap('n', 'k', 'kzz', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', 'J', 'j', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', 'K', 'k', { noremap = true, silent = true })
 
-vim.opt.fillchars = {
-  vert = "┃",  -- Vertical separator
-  horiz = "━", -- Horizontal separator
-  horizup = "┻",
-  horizdown = "┳",
-  vertleft = "┫",
-  vertright = "┣",
-  verthoriz = "╋",
-}
-
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 
